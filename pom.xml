@@ -19,6 +19,9 @@
         <module>service-admin</module>
         <module>feign</module>
         <module>hystrix-feign</module>
+        <module>hystrix-dashboard</module>
+        <module>turbine</module>
+        <module>sleuth</module>
     </modules>
     <packaging>pom</packaging>
 

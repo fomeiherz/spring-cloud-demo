@@ -80,14 +80,42 @@ eureka-sever -> service-admin -> service-two
 
 ### 五、熔断环境搭建
 #### 搭建系统步骤
-> feign
+> hystrix-feign
 
 #### 启动流程  
 eureka-sever -> hystrix-feign
 
 #### 熔断测试
-访问熔断配置的接口：http://localhost:7079/addition?a=1&b=1
+访问熔断配置的接口：http://localhost:7079/addition?a=1&b=1  
 
+问题：每一个一个接口配一个熔断，岂不是很麻烦？
+
+### 六、断路器的监控台环境搭建
+#### 搭建系统步骤
+> hystrix-dashboard  
+
+#### 监控台环境的测试
+访问断路器的监控台：http://localhost:7080/hystrix.stream
+
+
+### 七、Zipkin跟踪微服务环境搭建
+
+#### 搭建系统步骤  
+> sleuth  
+
+#### 注意  
+service-one的application.properties配置如下：  
+> spring.zipkin.baseUrl=http://localhost:7082  
+> spring.zipkin.enabled=true  
+
+#### 启动流程  
+依赖环境：redis、mysql  
+eureka-sever -> config-server -> service-one -> service-two -> sleuth  
+
+#### 测试
+- 访问service-one接口：http://localhost:7074/testServiceTwo?a=1&b=1
+- 传送可能有延迟，需要等几秒钟
+- 访问sleuth系统：http://localhost:7082/
 
 ### 项目描述  
 #### 端口
@@ -98,7 +126,9 @@ service-one       7074
 service-two       7075  
 service-two1      7067  
 ribbon            7071  
-zuul              7073 
-service-admin     7088
-feign             7078
+zuul              7073  
+service-admin     7088  
+feign             7078  
+hystrix-dashboard 7080  
+sleuth            7082  
 ```
