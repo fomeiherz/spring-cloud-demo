@@ -17,6 +17,7 @@
         <module>service-two1</module>
         <module>zuul</module>
         <module>service-admin</module>
+        <module>feign</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -57,8 +57,6 @@ eureka-sever -> ribbon -> service-two -> service-two1
 #### 搭建架构图
 ![avata](http://p7240jy2w.bkt.clouddn.com/spring-cloud-zuul%E6%9E%B6%E6%9E%84.png)
 
-注意：zuul 的 ZuulApplication.java 的注解是 @SpringCloudApplication
-
 #### 启动流程
 eureka-sever -> config-server -> service-one -> service-two -> service-two1 -> zuul  
 
@@ -68,6 +66,27 @@ eureka-sever -> config-server -> service-one -> service-two -> service-two1 -> z
 
 问题：如何把zuul和ribbon结合起来呢？  
 
+
+### 四、搭建spring boot admin监控台的环境  
+#### 搭建系统步骤
+> service-admin  
+
+#### 启动流程
+eureka-sever -> service-admin -> service-two  
+
+#### spring boot admin监控台的测试
+访问admin系统：http://localhost:7088
+
+
+### 五、熔断环境搭建
+#### 搭建系统步骤
+> feign
+
+#### 启动流程  
+eureka-sever -> service-two -> ribbon -> feign
+
+#### 熔断测试
+访问熔断配置的接口：http://localhost:7078/addition?a=1&b=1
 
 
 ### 项目描述  
@@ -80,4 +99,6 @@ service-two       7075
 service-two1      7067  
 ribbon            7071  
 zuul              7073 
+service-admin     7088
+feign             7078
 ```
