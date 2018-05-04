@@ -51,9 +51,11 @@ eureka-sever -> ribbon -> service-two -> service-two1
 #### 搭建系统步骤
 > zuul  
 
-#### zuul组件的链路图
+#### Zuul组件的链路图
 ![avata](http://p7240jy2w.bkt.clouddn.com/zuul%E7%BB%84%E4%BB%B6%E7%9A%84%E9%93%BE%E8%B7%AF%E5%9B%BE.png)
 
+#### 搭建架构图
+![avata](http://p7240jy2w.bkt.clouddn.com/spring-cloud-zuul%E6%9E%B6%E6%9E%84.png)
 
 注意：zuul 的 ZuulApplication.java 的注解是 @SpringCloudApplication
 
