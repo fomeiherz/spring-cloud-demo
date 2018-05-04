@@ -15,6 +15,7 @@
         <module>ribbon</module>
         <module>service-two</module>
         <module>service-two1</module>
+        <module>zuul</module>
     </modules>
     <packaging>pom</packaging>
 
