@@ -1,4 +1,9 @@
-参考：https://github.com/Lovnx/micro-service
+### 饮水思源
+
+---  
+
+原项目：https://github.com/Lovnx/micro-service  
+Ribbon负载均衡策略配置：https://blog.csdn.net/rickiyeat/article/details/64918756
 
 ### 一、搭建一个配置中心的测试环境  
 
