@@ -83,10 +83,10 @@ eureka-sever -> service-admin -> service-two
 > feign
 
 #### 启动流程  
-eureka-sever -> service-two -> ribbon -> feign
+eureka-sever -> hystrix-feign
 
 #### 熔断测试
-访问熔断配置的接口：http://localhost:7078/addition?a=1&b=1
+访问熔断配置的接口：http://localhost:7079/addition?a=1&b=1
 
 
 ### 项目描述  

@@ -18,6 +18,7 @@
         <module>zuul</module>
         <module>service-admin</module>
         <module>feign</module>
+        <module>hystrix-feign</module>
     </modules>
     <packaging>pom</packaging>
 
