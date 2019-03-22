@@ -11,7 +11,7 @@ Ribbon负载均衡策略配置：https://blog.csdn.net/rickiyeat/article/details
 ---  
 
 #### 搭建架构图
-![avata](http://p7240jy2w.bkt.clouddn.com/spring-cloud-demo%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
+![avata](http://sharefile.fomeiherz.top/spring-cloud-demo%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
 
 #### 搭建系统步骤
 > eureka-sever  
@@ -34,7 +34,7 @@ eureka-sever -> config-server -> service-one
 ---  
 
 #### 搭建架构图
-![avata](http://p7240jy2w.bkt.clouddn.com/spring-cloud-ribbon%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E6%9E%B6%E6%9E%84.png)
+![avata](http://sharefile.fomeiherz.top/spring-cloud-ribbon%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E6%9E%B6%E6%9E%84.png)
 #### 搭建系统步骤
 > service-two  
 > service-two1  
@@ -52,10 +52,10 @@ eureka-sever -> ribbon -> service-two -> service-two1
 > zuul  
 
 #### Zuul组件的链路图
-![avata](http://p7240jy2w.bkt.clouddn.com/zuul%E7%BB%84%E4%BB%B6%E7%9A%84%E9%93%BE%E8%B7%AF%E5%9B%BE.png)
+![avata](http://sharefile.fomeiherz.top/zuul%E7%BB%84%E4%BB%B6%E7%9A%84%E9%93%BE%E8%B7%AF%E5%9B%BE.png)
 
 #### 搭建架构图
-![avata](http://p7240jy2w.bkt.clouddn.com/spring-cloud-zuul%E6%9E%B6%E6%9E%84.png)
+![avata](http://sharefile.fomeiherz.top/spring-cloud-zuul%E6%9E%B6%E6%9E%84.png)
 
 #### 启动流程
 eureka-sever -> config-server -> service-one -> service-two -> service-two1 -> zuul  
